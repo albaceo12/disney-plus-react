@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import jugle from "../assets-img-video/images/image/jugle.jpg";
 function Stream() {
   return (
     <Section>
@@ -16,7 +16,7 @@ function Stream() {
           <button className="disney-theme">Preorder</button>
         </Textinfo>
         <Imaginfo>
-          <img src="/images/image/jugle.jpg" alt="" />
+          <img src={jugle} alt="" />
         </Imaginfo>
       </Container>
     </Section>

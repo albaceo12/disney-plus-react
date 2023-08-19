@@ -80,7 +80,8 @@ const Container = styled.main`
   padding: 2vh calc(2.5vw + 5px);
   position: relative;
   ::before {
-    background: url("images/home-background.png") center / cover no-repeat fixed;
+    background: url("/disney-plus-react/static/media/home-background.a0c4bdd961442f1bc8b1.png")
+      center / cover no-repeat fixed;
     content: "";
     position: absolute;
     right: 0;

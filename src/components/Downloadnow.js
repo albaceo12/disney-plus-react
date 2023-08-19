@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import Devices from "../assets-img-video/images/image/Devices.png";
 function Downloadnew() {
   return (
     <Section>
@@ -16,7 +16,7 @@ function Downloadnew() {
           <button className="disney-theme">Preorder</button>
         </Textinfo>
         <Imaginfo>
-          <img src="/images/image/Devices.png" alt="" />
+          <img src={Devices} alt="" />
         </Imaginfo>
       </Container>
     </Section>

@@ -9,6 +9,14 @@ import {
 } from "../features/user/userslice";
 import { auth, provider } from "../firebase/firebase";
 import { NavLink, useNavigate } from "react-router-dom";
+import logo from "../assets-img-video/images/logo.svg";
+import home_icon from "../assets-img-video/images/home-icon.svg";
+import search_icon from "../assets-img-video/images/search-icon.svg";
+import watchlist_icon from "../assets-img-video/images/watchlist-icon.svg";
+import original_icon from "../assets-img-video/images/original-icon.svg";
+import movie_icon from "../assets-img-video/images/movie-icon.svg";
+import series_icon from "../assets-img-video/images/series-icon.svg";
+import shutdown from "../assets-img-video/images/image/shutdown.png";
 function Header() {
   const username = useSelector(selectusername);
   const photo = useSelector(selectuserphoto);
@@ -57,7 +65,7 @@ function Header() {
     <Nav>
       <Logo>
         <NavLink to="/">
-          <img src="/images/logo.svg" alt="" />
+          <img src={logo} alt="" />
         </NavLink>
       </Logo>
       {!username ? (
@@ -70,37 +78,37 @@ function Header() {
           <Navmenu>
             <li>
               <NavLink to="/" className="nav-link">
-                <img src="/images/home-icon.svg" />
+                <img src={home_icon} />
                 <span>HOME</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="" className="nav-link">
-                <img src="/images/search-icon.svg" />
+                <img src={search_icon} />
                 <span>SEARCH</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="" className="nav-link">
-                <img src="/images/watchlist-icon.svg" />
+                <img src={watchlist_icon} />
                 <span>WATCHLIST</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="" className="nav-link">
-                <img src="/images/original-icon.svg" />
+                <img src={original_icon} />
                 <span>ORIGINALS</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="" className="nav-link">
-                <img src="/images/movie-icon.svg" />
+                <img src={movie_icon} />
                 <span>MOVIES</span>
               </NavLink>
             </li>
             <li>
               <NavLink to="" className="nav-link">
-                <img src="/images/series-icon.svg" />
+                <img src={series_icon} />
                 <span>SERIES</span>
               </NavLink>
             </li>
@@ -120,7 +128,7 @@ function Header() {
             className="nav-link"
             onClick={() => setshowpop(false)}
           >
-            <img src="/images/home-icon.svg" />
+            <img src={home_icon} />
             <span>HOME</span>
           </NavLink>
         </li>
@@ -133,10 +141,7 @@ function Header() {
               setshowpop(false);
             }}
           >
-            <img
-              src="/images/image/shutdown.svg"
-              style={{ width: "1rem", height: "1rem" }}
-            />
+            <img src={shutdown} style={{ width: "1rem", height: "1rem" }} />
             <span>Sign Out</span>
           </NavLink>
         </li>

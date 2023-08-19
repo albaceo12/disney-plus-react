@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { AiOutlinePlus } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import db from "../firebase/firebase";
+import play_icon_black from "../assets-img-video/images/play-icon-black.png";
+import play_icon_white from "../assets-img-video/images/play-icon-white.png";
+import group_icon from "../assets-img-video/images/group-icon.png";
 function Detail() {
   const { id } = useParams();
   const [movie, setmovie] = useState();
@@ -48,11 +51,11 @@ function Detail() {
                 <Controls>
                   <div className="playtrail">
                     <Playbtn>
-                      <img src="/images/play-icon-black.png" />
+                      <img src={play_icon_black} />
                       <span>PLAY</span>
                     </Playbtn>
                     <Trailerbtn>
-                      <img src="/images/play-icon-white.png" />
+                      <img src={play_icon_white} />
                       <span>trailer</span>
                     </Trailerbtn>
                   </div>
@@ -61,7 +64,7 @@ function Detail() {
                       <AiOutlinePlus className="plusmark" />
                     </Addbtn>
                     <Gpwatch>
-                      <img src="/images/group-icon.png" />
+                      <img src={group_icon} />
                     </Gpwatch>
                   </div>
                 </Controls>

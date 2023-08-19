@@ -7,12 +7,14 @@ import Marvelstudio from "./Marvelstudio";
 import Gridtheme from "./Gridtheme";
 import Devices from "./Devices";
 import Advertise from "./Advertise";
+import ctalogo_one from "../assets-img-video/images/cta-logo-one.svg";
+import ctalogo_two from "../assets-img-video/images/cta-logo-two.png";
 function Login() {
   return (
     <>
       <Container>
         <Cta>
-          <Ctalogo1 src="images/cta-logo-one.svg" />
+          <Ctalogo1 src={ctalogo_one} />
           <Signup>Get The Disney Bundle </Signup>
           <h4>Steam Now:Terms Apply</h4>
           <Description>
@@ -21,7 +23,7 @@ function Login() {
             Kiel Murray and Dean Wellins, based on story ideas by Bradley
             Raymond and additional story contributions by Helen Kalafatic.
           </Description>
-          <Ctalogo2 src="images/cta-logo-two.png" />
+          <Ctalogo2 src={ctalogo_two} />
           <button type="button" className="link">
             Sign UP for Disney+ Only
           </button>
@@ -78,7 +80,7 @@ const Container = styled.div`
     color: gray;
   }
   ::before {
-    background-image: url("images/login-background.jpg");
+    background-image: url("/disney-plus-react/static/media/login-background.05b1a1b3088cbb458939.jpg");
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

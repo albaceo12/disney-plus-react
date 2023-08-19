@@ -21,7 +21,7 @@ const Section = styled.section`
   position: relative;
   height: 95vh;
   ::before {
-    background-image: url("./images/image/BlackPanther.jpg");
+    background-image: url("/disney-plus-react/static/media/BlackPanther.3a4b0fd7dd678782dbb6.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import logo_footer from "../assets-img-video/images/logo.svg";
 function Footer() {
   return (
     <>
       <Section>
         <Container>
           <Footerband>
-            <img src="/images/logo.svg" alt="" />
+            <img src={logo_footer} alt="" />
           </Footerband>
           <Nav>
             <li>

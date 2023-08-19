@@ -22,7 +22,7 @@ const Section = styled.section`
   position: relative;
   height: 95vh;
   ::before {
-    background-image: url("./images/image/Soul_Groupwatch.jpg");
+    background-image: url("/disney-plus-react/static/media/Soul_Groupwatch.1555dfebc2c696a10a4f.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import cta_logo_one from "../assets-img-video/images/cta-logo-one.svg";
 function Advertise() {
   return (
     <>
       <Section>
         <Container>
           <IMGinfo>
-            <img src="/images/cta-logo-one.svg" alt="" />
+            <img src={cta_logo_one} alt="" />
           </IMGinfo>
           <Textinfo>
             <p>
