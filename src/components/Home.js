@@ -11,7 +11,10 @@ import Trending from "../Trending";
 import Hollywood from "../Hollywood";
 import DisneyKid from "../DisneyKid";
 import Popular from "../Popular";
+import home_background from "../assets-img-video/images/home-background.png";
 function Home() {
+  const homesrc = home_background;
+  console.log(homesrc);
   let dispatch = useDispatch();
   let popular = [];
   let hollywood = [];
@@ -61,7 +64,7 @@ function Home() {
       });
   }, []);
   return (
-    <Container>
+    <Container src={homesrc}>
       <Imgslider />
       <Viewers />
       <Movies />
@@ -80,8 +83,7 @@ const Container = styled.main`
   padding: 2vh calc(2.5vw + 5px);
   position: relative;
   ::before {
-    background: url("/disney-plus-react/static/media/home-background.a0c4bdd961442f1bc8b1.png")
-      center / cover no-repeat fixed;
+    background: url(${(e) => e.src}) center / cover no-repeat fixed;
     content: "";
     position: absolute;
     right: 0;

@@ -9,10 +9,12 @@ import Devices from "./Devices";
 import Advertise from "./Advertise";
 import ctalogo_one from "../assets-img-video/images/cta-logo-one.svg";
 import ctalogo_two from "../assets-img-video/images/cta-logo-two.png";
+import login_background from "../assets-img-video/images/login-background.jpg";
 function Login() {
+  const loginsrc = login_background;
   return (
     <>
-      <Container>
+      <Container src={loginsrc}>
         <Cta>
           <Ctalogo1 src={ctalogo_one} />
           <Signup>Get The Disney Bundle </Signup>
@@ -80,7 +82,7 @@ const Container = styled.div`
     color: gray;
   }
   ::before {
-    background-image: url("/disney-plus-react/static/media/login-background.05b1a1b3088cbb458939.jpg");
+    background-image: url(${(e) => e.src});
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import Black_Panther from "../assets-img-video/images/image/BlackPanther.jpg";
 function Marvelstudio() {
+  const BlackPanther = Black_Panther;
   return (
     <>
-      <Section>
+      <Section src={BlackPanther}>
         <Container>
           <Content>
             <h1 className="disney-title">Endless Entertainment</h1>
@@ -21,7 +23,7 @@ const Section = styled.section`
   position: relative;
   height: 95vh;
   ::before {
-    background-image: url("/disney-plus-react/static/media/BlackPanther.3a4b0fd7dd678782dbb6.jpg");
+    background-image: url(${(e) => e.src});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

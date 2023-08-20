@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import soul_Groupwatch from "../assets-img-video/images/image/Soul_Groupwatch.jpg";
 function Groupwatch() {
+  const groupsrc = soul_Groupwatch;
   return (
     <>
-      <Section>
+      <Section src={groupsrc}>
         <Container>
           <Content>
             <h1 className="disney-title">Virtual Movie Nights With</h1>
@@ -22,7 +24,7 @@ const Section = styled.section`
   position: relative;
   height: 95vh;
   ::before {
-    background-image: url("/disney-plus-react/static/media/Soul_Groupwatch.1555dfebc2c696a10a4f.jpg");
+    background-image: url(${(e) => e.src});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
